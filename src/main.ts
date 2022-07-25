@@ -52,8 +52,6 @@ async function run() {
       })
     })
     
-    print('pabbelt:', changes)
-
     // Check that no more than the specified number of lines have changed
     const maxLinesChanged = +core.getInput('maxLinesChanged')
     if (maxLinesChanged && (additions > maxLinesChanged)) {
